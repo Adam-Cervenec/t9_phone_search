@@ -9,7 +9,6 @@ void convert_to_t9(char text[]);
 void convert_to_lowercase(char text[]);
 bool is_contact_found(char text[], char filter[]);
 void duplicate_array(char arrayInput[], char arrayOutput[]);
-int get_array_length(char array[]);
 bool has_newline(char text[]);
 
 int main(int argc, char *argv[]) {
@@ -78,13 +77,6 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 
-int get_array_length(char array[]) {
-  int i = 0;
-  while (array[i] != '\0') {
-    i++;
-  }
-  return i;
-}
 bool is_contact_found(char text[], char filter[]) {
   int i = 0;
   int j;
