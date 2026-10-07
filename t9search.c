@@ -74,8 +74,8 @@ int main(int argc, char *argv[]) {
       printf("Not found\n");
       return 0;
     }
-    return 0;
   }
+  return 0;
 }
 
 int get_array_length(char array[]) {
