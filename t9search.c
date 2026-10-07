@@ -88,7 +88,7 @@ bool is_contact_found(char text[], char filter[]) {
 
   while (text[i] != '\0') {
     j = 0;
-    while (text[i + j] == filter[j] && filter[j] != '\0') {
+    while (filter[j] != '\0' && text[i + j] == filter[j]) {
       j++;
     }
 
