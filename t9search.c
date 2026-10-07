@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
 
     for (int i = 0; argv[1][i] != '\0'; i++) {
       if (argv[1][i] < '0' || argv[1][i] > '9') {
-        fprintf(stderr, "Invalid character %s", argv[1]);
+        fprintf(stderr, "Invalid character(s)");
         return 1;
       }
     }
