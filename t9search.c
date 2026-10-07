@@ -41,6 +41,11 @@ int main(int argc, char *argv[]) {
       }
     }
     bool isFound = false;
+
+    if (argv[1][0] == '\0') {
+      fprintf(stderr, "Invalid argument\n");
+      return 1;
+    }
     while (fgets(name, sizeof(name), stdin) != NULL) {
       if (fgets(phone, sizeof(phone), stdin) == NULL) {
         fprintf(stderr, "Name doesnt have coresponding phone in the list");
